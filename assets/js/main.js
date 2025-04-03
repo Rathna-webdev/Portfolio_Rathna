@@ -1,25 +1,6 @@
 /*=============== EMAIL JS ===============*/
 
-const contactForm = document.getElementById('contact-form'),
-        contactMessage = document.getElementById('contact-message')
 
-const sendEmail = (e) => {
- e.preventDefault()
-
-  emailjs.sendForm('service_xhlvdx1', 'template_86v0c9m', '#contact-form', 'msXkSttQgvZdmu52D')
-
-    .then(() => {
-        contactMessage.textContent = 'Message sent successfully ✅'
-        setTimeout(() => {
-            contactMessage.textContent = ''
-        }, 5000)
-
-        contactForm.reset()
-        }, ()=> {
-            contactMessage.textContent = 'Message not sent (service error) ❌'
-            })
-contactForm.addEventListener('submit', sendEmail)
-        }
 /*=============== SHOW SCROLL UP ===============*/ 
 
 const scrollUp = () => {
