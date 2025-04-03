@@ -439,7 +439,7 @@ img {
 }
 
 .projects__button:hover{
-  color: var(--text-color);
+  color: red;
 }
 
 .projects__card:hover .projects__img{
